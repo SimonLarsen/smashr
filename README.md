@@ -5,13 +5,13 @@ Small package for turning deep nested lists into tidy data tables.
 
 ## Installation
 
-```
+```r
 devtools::install_github("SimonLarsen/smashr")
 ```
 
 ## Example
 
-```
+```r
 x <- list(
   cars = list(
     sedan = list(topspeed=300, weight=1300, wheels=4),
@@ -23,7 +23,7 @@ x <- list(
   )
 )
 
-smash(x, c("type","mode"))
+smash(x, c("type","model"))
 #>      type      mode topspeed weight wheels
 #> 1:   cars     sedan      300   1300      4
 #> 2:   cars     truck      130   5000      6
