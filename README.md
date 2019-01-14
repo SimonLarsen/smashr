@@ -24,7 +24,7 @@ x <- list(
 )
 
 smash(x, c("type","model"))
-#>      type      mode topspeed weight wheels
+#>      type     model topspeed weight wheels
 #> 1:   cars     sedan      300   1300      4
 #> 2:   cars     truck      130   5000      6
 #> 3: planes boeing747      988 440000       
