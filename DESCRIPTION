@@ -1,12 +1,14 @@
 Package: smashr
 Type: Package
 Title: Smash nested lists into tidy data tables.
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: c(person("Simon", "Larsen", email="simonhffh@gmail.com", role=c("aut","cre")))
 Maintainer: Simon J. Larsen <simonhffh@gmail.com>
 Description: Converts a nested list of lists into a data table.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Imports: data.table
-RoxygenNote: 6.0.1
+Imports:
+    tibble,
+    dplyr
+RoxygenNote: 6.1.1

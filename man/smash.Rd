@@ -4,12 +4,14 @@
 \alias{smash}
 \title{Smash a nested list into a tidy table.}
 \usage{
-smash(x, col.names = NULL)
+smash(x, col.names = NULL, max.depth = Inf)
 }
 \arguments{
 \item{x}{List to smash.}
 
-\item{Name}{for column corresponding to each level.}
+\item{max.depth}{Maximum number of recursive levels to flatten.}
+
+\item{Name}{Name for column corresponding to each level.}
 }
 \value{
 A \code{data.table} object.
