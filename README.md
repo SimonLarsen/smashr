@@ -12,6 +12,8 @@ devtools::install_github("SimonLarsen/smashr")
 ## Example
 
 ```r
+library(smashr)
+
 x <- list(
   cars = list(
     sedan = list(topspeed=300, weight=1300, wheels=4),
@@ -24,9 +26,11 @@ x <- list(
 )
 
 smash(x, c("type","model"))
-#>      type     model topspeed weight wheels
-#> 1:   cars     sedan      300   1300      4
-#> 2:   cars     truck      130   5000      6
-#> 3: planes boeing747      988 440000       
-#> 4: planes  concorde     2180  78700       
+#> # A tibble: 4 x 5
+#>   type   model     topspeed weight wheels
+#>   <chr>  <chr>        <dbl>  <dbl>  <dbl>
+#> 1 cars   sedan          300   1300      4
+#> 2 cars   truck          130   5000      6
+#> 3 planes boeing747      988 440000     NA
+#> 4 planes concorde      2180  78700     NA
 ```
